@@ -33,6 +33,7 @@ HARDWARE/   FOC application modules (new implementation)
 Drivers/    ST HAL and CMSIS
 Middlewares/ ARM CMSIS-DSP
 MDK-ARM/    Keil project
+media/      bench waveforms, photos and demo video
 G431FOC.ioc  STM32CubeMX configuration
 ```
 
@@ -57,6 +58,30 @@ MDK-ARM/G431FOC.uvprojx
 ```
 
 or open `G431FOC.ioc` in STM32CubeMX to inspect the peripheral setup.
+
+## Results / debug media
+
+The repository includes bench waveforms, PCB 3D views and a motor-run video
+under `media/`. These are debug material captured on the joint-actuator
+motor platform that this firmware targets:
+
+```text
+media/current_loop_iq_id.png               current-loop Iq/Id tracking
+media/current_loop_positive_step_windup.png  positive-step saturation case
+media/current_loop_negative_step_anti_windup.png negative-step recovery case
+media/three_loop_position.png              position/speed/current tracking
+media/before_adc_spi_fix.png               before ADC/SPI timing fix
+media/after_adc_spi_fix.png                after ADC/SPI timing fix
+media/speed_ripple_1_2_rad.png             speed-ripple comparison
+media/magnet_eccentric_severe.png          magnet eccentricity case
+media/magnet_eccentric_comparison.png      magnet eccentricity comparison
+media/magnet_eccentric_optimized.png       after eccentricity optimization
+media/driver_board_photo.png               driver board / bench photo
+media/motor_run.mp4                        motor run demo
+```
+
+> These media are shared as platform debug material. Firmware behaviour on a
+> specific motor still needs to be revalidated after hardware bring-up.
 
 ## Test modes
 
