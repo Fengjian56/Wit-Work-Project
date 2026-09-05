@@ -1,0 +1,27 @@
+# Keil build output
+MDK-ARM/Listings/
+MDK-ARM/Objects/
+MDK-ARM/G431FOC.uvguix.*
+MDK-ARM/*.build_log.htm
+MDK-ARM/*.dep
+
+# Generic build artifacts
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.map
+*.lnp
+*.sct
+*.htm
+
+# IDE / OS
+*.uvguix.*
+Thumbs.db
+.DS_Store
+
+# Archives
+*.zip
+*.rar
+*.7z
